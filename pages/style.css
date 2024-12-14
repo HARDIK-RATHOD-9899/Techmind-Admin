@@ -1,0 +1,319 @@
+
+  /* Dark Theme Variables with Enhanced Text Colors */
+  :root {
+    --primary: #764BA2;      /* Purple */
+    --secondary: #667EEA;    /* Blue-Purple */
+    --dark-bg: #1A1C1E;      /* Dark Background */
+    --card-bg: #2D2F31;      /* Card Background */
+    --darker-card-bg: #242628; /* Darker Card Background */
+    --text-primary: #FFFFFF; /* Pure White for Primary Text */
+    --text-secondary: #E4E6EB; /* Light Gray for Secondary Text */
+    --text-muted: #B0B3B8;   /* Muted Text Color */
+    --border-color: rgba(255,255,255,0.1);
+    --hover-color: rgba(118, 75, 162, 0.2);
+  }
+
+  /* Text Color Overrides */
+  body, 
+  .card,
+  .card-header,
+  .card-body,
+  .card-footer,
+  .nav-link,
+  .navbar-brand,
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: var(--text-primary) !important;
+  }
+
+  /* Secondary Text Colors */
+  .text-secondary,
+  .text-sm,
+  .text-xs,
+  .text-muted,
+  .description,
+  .card small,
+  .text-dark {
+    color: var(--text-secondary) !important;
+  }
+
+  /* Table Text Colors */
+  .table {
+    color: var(--text-primary) !important;
+  }
+
+  .table thead th {
+    color: var(--text-secondary) !important;
+    font-weight: 600 !important;
+  }
+
+  /* Input Text Colors */
+  .form-control,
+  .input-group-outline input,
+  .input-group-outline textarea {
+    color: var(--text-primary) !important;
+  }
+
+  .input-group-outline label {
+    color: var(--text-secondary) !important;
+  }
+
+  /* Sidebar Navigation */
+  .sidenav .nav-link {
+    color: var(--text-secondary) !important;
+  }
+
+  .sidenav .nav-link.active {
+    color: white !important;
+  }
+
+  .sidenav .nav-link:hover:not(.active) {
+    color: var(--text-primary) !important;
+  }
+
+  /* Breadcrumb */
+  .breadcrumb-item,
+  .breadcrumb-item a,
+  .breadcrumb-item + .breadcrumb-item::before {
+    color: var(--text-secondary) !important;
+  }
+
+  /* Global Dark Theme */
+  body, 
+  .g-sidenav-show, 
+  .g-sidenav-show .g-sidenav-pinned {
+    background-color: var(--dark-bg) !important;
+    color: var(--text-primary) !important;
+  }
+
+  /* Navbar */
+  .navbar-main,
+  .navbar-vertical,
+  .navbar {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+  }
+
+  /* Sidebar */
+  .sidenav,
+  .sidenav.bg-white,
+  #sidenav-main {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+  }
+
+  .sidenav .navbar-brand,
+  .sidenav .navbar-heading {
+    color: var(--text-primary) !important;
+  }
+
+  .sidenav .nav-link,
+  .sidenav .nav-link .material-symbols-rounded,
+  .sidenav .nav-link .nav-link-text {
+    color: var(--text-secondary) !important;
+  }
+
+  .sidenav .nav-link.active,
+  .sidenav .nav-link.active .material-symbols-rounded,
+  .sidenav .nav-link.active .nav-link-text {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: white !important;
+  }
+
+  .sidenav hr.horizontal {
+    background-color: var(--border-color) !important;
+  }
+
+  /* Cards */
+  .card,
+  .card-header,
+  .card-body,
+  .card-footer {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-primary) !important;
+  }
+
+  /* Tables */
+  .table,
+  .table thead th,
+  .table tbody td {
+    color: var(--text-primary) !important;
+    border-color: var(--border-color) !important;
+  }
+
+  .table thead tr {
+    background-color: var(--darker-card-bg) !important;
+  }
+
+  /* Inputs */
+  .input-group,
+  .input-group-outline,
+  .form-control {
+    background-color: var(--darker-card-bg) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-primary) !important;
+  }
+
+  .input-group-outline label {
+    color: var(--text-secondary) !important;
+  }
+
+  .input-group-outline .form-control:focus {
+    border-color: var(--primary) !important;
+  }
+
+  /* Buttons */
+  .btn-outline-dark {
+    color: var(--text-primary) !important;
+    border-color: var(--border-color) !important;
+  }
+
+  .btn-outline-dark:hover {
+    background-color: var(--primary) !important;
+    color: white !important;
+  }
+
+  .fixed-plugin .btn {
+    background: var(--card-bg) !important;
+    color: var(--text-primary) !important;
+  }
+
+  /* Dropdowns */
+  .dropdown-menu {
+    background-color: var(--darker-card-bg) !important;
+    border-color: var(--border-color) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+  }
+
+  .dropdown-item {
+    color: var(--text-primary) !important;
+  }
+
+  .dropdown-item:hover {
+    background-color: var(--hover-color) !important;
+  }
+
+  /* Charts */
+  .chart-canvas {
+    filter: brightness(0.8) !important;
+  }
+
+  /* Timeline */
+  .timeline-block {
+    border-left-color: var(--primary) !important;
+  }
+
+  .timeline-step {
+    background-color: var(--darker-card-bg) !important;
+    border-color: var(--primary) !important;
+  }
+
+  /* Breadcrumb */
+  .breadcrumb-item,
+  .breadcrumb-item a,
+  .breadcrumb-item + .breadcrumb-item::before {
+    color: var(--text-secondary) !important;
+  }
+
+  /* Fixed Plugin */
+  .fixed-plugin .card {
+    background-color: var(--card-bg) !important;
+  }
+
+  /* Progress Bars */
+  .progress {
+    background-color: var(--darker-card-bg) !important;
+  }
+
+  .progress-bar {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%) !important;
+  }
+
+  /* Icons */
+  .material-symbols-rounded,
+  .fa,
+  .fas,
+  .far,
+  .fab {
+    color: var(--text-primary) !important;
+  }
+
+  /* Avatar Groups */
+  .avatar-group .avatar {
+    border-color: var(--card-bg) !important;
+  }
+
+  /* Footer */
+  .footer {
+    background-color: var(--card-bg) !important;
+    border-top: 1px solid var(--border-color) !important;
+  }
+
+  .footer .copyright {
+    color: var(--text-secondary) !important;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--dark-bg);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 4px;
+  }
+
+  /* Tooltips */
+  .tooltip .tooltip-inner {
+    background-color: var(--darker-card-bg) !important;
+    color: var(--text-primary) !important;
+  }
+
+  /* Badge */
+  .badge {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%) !important;
+  }
+
+  /* Links */
+  a {
+    color: var(--primary) !important;
+  }
+
+  a:hover {
+    color: var(--secondary) !important;
+  }
+
+  /* Stats Cards Icons */
+  .icon-shape {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%) !important;
+    box-shadow: 0 4px 10px rgba(118, 75, 162, 0.3) !important;
+  }
+
+  /* Transitions */
+  .card,
+  .btn,
+  .nav-link,
+  .dropdown-item {
+    transition: all 0.3s ease !important;
+  }
+
+  /* Hover Effects */
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+
+  .nav-link:hover .material-symbols-rounded {
+    transform: scale(1.1);
+  }
+
+  #navbarBlur{
+    margin-left: 5%;
+    /* width: 100%; */
+  }
